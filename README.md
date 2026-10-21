@@ -1,8 +1,8 @@
 # Clouds Comparison
 
-[![Version](https://img.shields.io/badge/version-v1.3.0-blue.svg)](https://github.com/govindarajanv/infra-architect)
+[![Version](https://img.shields.io/badge/version-v1.3.0-blue.svg)](https://github.com/govindarajanv/cloud-architect)
 **Current Version:** `v1.3.0`
-**Live Page:** [infra-architect](https://govindarajanv.github.io/infra-architect/)
+**Live Page:** [cloud-architect](https://govindarajanv.github.io/cloud-architect/)
 
 A comprehensive, production-grade architectural reference mapping equivalent cloud services and capabilities across the "Big Three" hyperscalers: **Microsoft Azure**, **Amazon Web Services (AWS)**, and **Google Cloud Platform (GCP)** — plus a **Kubernetes (K8s Native)** column of cloud-native and CNCF projects (graduated first, then incubating, then other k8s-native OSS).
 

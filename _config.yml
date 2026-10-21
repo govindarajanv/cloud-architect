@@ -12,7 +12,7 @@ plugins:
   - jekyll-remote-theme
 
 # GitHub Pages project page baseurl
-baseurl: "/infra-architect"
+baseurl: "/cloud-architect"
 url: "https://govindarajanv.github.io"
 
 # Build settings
