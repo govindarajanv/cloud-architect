@@ -21,4 +21,4 @@ kramdown:
   input: GFM
   hard_wrap: false
   syntax_highlighter: rouge
-show_downloads: true
+show_downloads: false
