@@ -1,0 +1,24 @@
+# Site settings
+title: Clouds Comparison
+description: >-
+  A production-grade architectural reference mapping equivalent cloud services and
+  capabilities across Microsoft Azure, Amazon Web Services (AWS), Google Cloud Platform
+  (GCP), and the Kubernetes (K8s Native) ecosystem.
+version: v1.3.0
+
+# GitHub Pages remote theme
+remote_theme: pages-themes/cayman@v0.2.0
+plugins:
+  - jekyll-remote-theme
+
+# GitHub Pages project page baseurl
+baseurl: "/infra-architect"
+url: "https://govindarajanv.github.io"
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+show_downloads: true

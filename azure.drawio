@@ -1,0 +1,67 @@
+<mxfile host="app.diagrams.net" modified="2023-12-22T11:37:26.549Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1.2 Safari/605.1.15" etag="ccv2U0Rr4Ja59jjcme0Q" version="22.1.11" type="github">
+  <diagram name="Page-1" id="L3U0tchyBG2r1No5ePam">
+    <mxGraphModel dx="1434" dy="827" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="L6sSysoaZfmQt14cvC6--1" value="" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.virtual_machine;" vertex="1" parent="1">
+          <mxGeometry x="240" y="56" width="50" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="L6sSysoaZfmQt14cvC6--2" value="&lt;b&gt;Web servers and App Servers &amp;amp; k8s nodes&lt;/b&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="320" y="66" width="270" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="L6sSysoaZfmQt14cvC6--3" value="" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/compute/Function_Apps.svg;" vertex="1" parent="1">
+          <mxGeometry x="231" y="176" width="68" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L6sSysoaZfmQt14cvC6--4" value="&lt;b&gt;Serverless Workloads&lt;/b&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="320" y="186" width="270" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="L6sSysoaZfmQt14cvC6--5" value="" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/containers/Container_Instances.svg;" vertex="1" parent="1">
+          <mxGeometry x="231" y="327" width="64" height="69" as="geometry" />
+        </mxCell>
+        <mxCell id="L6sSysoaZfmQt14cvC6--6" value="&lt;b&gt;Containerized applications without managing VMs or Kubernetes&lt;/b&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="321.5" y="359" width="390" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="L6sSysoaZfmQt14cvC6--7" value="" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/compute/App_Services.svg;" vertex="1" parent="1">
+          <mxGeometry x="233" y="491" width="64" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="L6sSysoaZfmQt14cvC6--8" value="&lt;b&gt;a one-stop shop for deploying and managing your applications with ease, offering features like auto-scaling, built-in security, and continuous integration/continuous delivery (CI/CD)&lt;/b&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="320" y="491" width="410" height="53" as="geometry" />
+        </mxCell>
+        <mxCell id="L6sSysoaZfmQt14cvC6--9" value="Azure VM" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="235" y="91" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="L6sSysoaZfmQt14cvC6--10" value="Azure Functions" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="217.5" y="226" width="95" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="L6sSysoaZfmQt14cvC6--11" value="Container Instances" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="204.5" y="396" width="117" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="L6sSysoaZfmQt14cvC6--12" value="App Service" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="203" y="560" width="117" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="L6sSysoaZfmQt14cvC6--13" value="AWS Elastic Beanstalk" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#ffffff;fillColor=#232F3E;dashed=0;verticalLabelPosition=middle;verticalAlign=bottom;align=center;html=1;whiteSpace=wrap;fontSize=10;fontStyle=1;spacing=3;shape=mxgraph.aws4.productIcon;prIcon=mxgraph.aws4.elastic_beanstalk;" vertex="1" parent="1">
+          <mxGeometry x="60" y="475" width="80" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="L6sSysoaZfmQt14cvC6--14" value="AWS Fargate" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#ffffff;fillColor=#232F3E;dashed=0;verticalLabelPosition=middle;verticalAlign=bottom;align=center;html=1;whiteSpace=wrap;fontSize=10;fontStyle=1;spacing=3;shape=mxgraph.aws4.productIcon;prIcon=mxgraph.aws4.fargate;" vertex="1" parent="1">
+          <mxGeometry x="60" y="324" width="80" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="L6sSysoaZfmQt14cvC6--15" value="AWS Lambda" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#ffffff;fillColor=#232F3E;dashed=0;verticalLabelPosition=middle;verticalAlign=bottom;align=center;html=1;whiteSpace=wrap;fontSize=10;fontStyle=1;spacing=3;shape=mxgraph.aws4.productIcon;prIcon=mxgraph.aws4.lambda;" vertex="1" parent="1">
+          <mxGeometry x="60" y="170" width="80" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="L6sSysoaZfmQt14cvC6--16" value="Amazon EC2" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#ffffff;fillColor=#232F3E;dashed=0;verticalLabelPosition=middle;verticalAlign=bottom;align=center;html=1;whiteSpace=wrap;fontSize=10;fontStyle=1;spacing=3;shape=mxgraph.aws4.productIcon;prIcon=mxgraph.aws4.ec2;" vertex="1" parent="1">
+          <mxGeometry x="60" y="40" width="80" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="L6sSysoaZfmQt14cvC6--17" value="Amazon EKS" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#ffffff;fillColor=#232F3E;dashed=0;verticalLabelPosition=middle;verticalAlign=bottom;align=center;html=1;whiteSpace=wrap;fontSize=10;fontStyle=1;spacing=3;shape=mxgraph.aws4.productIcon;prIcon=mxgraph.aws4.eks;" vertex="1" parent="1">
+          <mxGeometry x="60" y="630" width="80" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="L6sSysoaZfmQt14cvC6--18" value="" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/compute/Kubernetes_Services.svg;" vertex="1" parent="1">
+          <mxGeometry x="231" y="630" width="68" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L6sSysoaZfmQt14cvC6--20" value="Azure Kubernetes" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="206.5" y="700" width="117" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
