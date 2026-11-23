@@ -11,6 +11,7 @@ version: v1.4.0
 remote_theme: mmistakes/minimal-mistakes@4.28.1
 minimal_mistakes_skin: "default"
 plugins:
+  - jekyll-include-cache
   - jekyll-remote-theme
 
 # GitHub Pages project page baseurl
