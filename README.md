@@ -16,6 +16,8 @@ A comprehensive, production-grade architectural reference mapping equivalent clo
 
 Updated with the latest developments in the cloud space, including Generative AI & Foundation Models, Custom AI Silicon, Modern Serverless Containers, Unified Data Lakehouses, Cloud Security Posture Management (CSPM), and FinOps.
 
+> 📄 See the **[CHANGELOG](CHANGELOG.md)** for a record of changes across versions.
+
 ---
 
 ## 1. Global Infrastructure & Fundamentals
