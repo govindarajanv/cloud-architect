@@ -1,0 +1,112 @@
+---
+# Only the main Sass file needs front matter (the `---` above)
+---
+@import "minimal-mistakes";
+
+/* ===== Version / live link badges ===== */
+.badges {
+  margin: 1.2rem 0;
+}
+
+.badges a {
+  text-decoration: none;
+  margin-right: 0.5rem;
+}
+
+/* ===== Comparison tables =====
+   Target the wide content wrapper and generic tables so the styling
+   applies to every comparison table on the page regardless of layout. */
+.page__content table,
+.archive__item-body table {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 0.86rem;
+  line-height: 1.5;
+  margin: 1rem 0 2rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  border-radius: 6px;
+}
+
+.page__content table thead th {
+  position: sticky;
+  top: 0;
+  background-color: #155799;
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  font-size: 0.78rem;
+  padding: 0.7rem 0.8rem;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.page__content table tbody td {
+  padding: 0.7rem 0.8rem;
+  border-top: 1px solid #e8eef2;
+  vertical-align: top;
+  min-width: 8rem;
+}
+
+.page__content table tbody tr:nth-child(even) {
+  background-color: #f6f8fa;
+}
+
+.page__content table tbody tr:hover {
+  background-color: #eef3f8;
+}
+
+/* First data column (capability name) */
+.page__content table tbody td:first-child {
+  font-weight: 600;
+  color: #155799;
+  white-space: nowrap;
+}
+
+/* Value cells that hold equivalent services */
+.page__content table tbody td:nth-child(2),
+.page__content table tbody td:nth-child(3),
+.page__content table tbody td:nth-child(4),
+.page__content table tbody td:nth-child(5) {
+  color: #1b2838;
+}
+
+/* Kubernetes column highlight */
+.page__content table tbody td:nth-child(5) {
+  background-color: #eef7ef;
+  border-left: 3px solid #159957;
+  font-weight: 500;
+}
+
+/* Last column (notes) */
+.page__content table tbody td:last-child {
+  color: #5b6b7b;
+  font-size: 0.82rem;
+  min-width: 20rem;
+  max-width: 30rem;
+}
+
+/* ===== Links ===== */
+.page__content a {
+  color: #155799;
+}
+
+/* ===== Code ===== */
+.page__content code,
+.page__content tt {
+  background-color: #f0f4f6;
+  border-radius: 3px;
+  padding: 0.1em 0.35em;
+  font-size: 0.85em;
+  color: #155799;
+}
+
+/* Prevent sticky headers on small screens */
+@media (max-width: 64em) {
+  .page__content table thead th {
+    position: static;
+  }
+}

@@ -1,13 +1,15 @@
 # Site settings
 title: Clouds Comparison
+locale: en_US
 description: >-
   A production-grade architectural reference mapping equivalent cloud services and
   capabilities across Microsoft Azure, Amazon Web Services (AWS), Google Cloud Platform
   (GCP), and the Kubernetes (K8s Native) ecosystem.
 version: v1.4.0
 
-# GitHub Pages remote theme
-remote_theme: pages-themes/cayman@v0.2.0
+# GitHub Pages remote theme (Minimal Mistakes)
+remote_theme: mmistakes/minimal-mistakes@4.28.1
+minimal_mistakes_skin: "default"
 plugins:
   - jekyll-remote-theme
 
@@ -15,10 +17,20 @@ plugins:
 baseurl: "/cloud-architect"
 url: "https://govindarajanv.github.io"
 
+# Minimal Mistakes navigation / footer
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/govindarajanv/cloud-architect"
+
 # Build settings
 markdown: kramdown
 kramdown:
   input: GFM
   hard_wrap: false
   syntax_highlighter: rouge
-show_downloads: false
+exclude:
+  - Gemfile
+  - azure-pipelines.yml
+  - azure.drawio

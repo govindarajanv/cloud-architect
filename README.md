@@ -1,4 +1,10 @@
-# Clouds Comparison
+---
+layout: single
+title: Clouds Comparison
+permalink: /
+classes: wide
+author_profile: false
+---
 
 [![Version](https://img.shields.io/badge/version-v1.4.0-blue.svg)](https://github.com/govindarajanv/cloud-architect)
 **Current Version:** `v1.4.0`
