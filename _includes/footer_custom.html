@@ -1,0 +1,90 @@
+<script>
+(function () {
+  "use strict";
+
+  function addExpandButtons() {
+    var tables = document.querySelectorAll(".main-content:not(.table-expand-modal .main-content) table");
+    tables.forEach(function (table) {
+      if (table.closest(".table-wrapper")) return;
+
+      var wrapper = document.createElement("div");
+      wrapper.className = "table-wrapper";
+
+      var toolbar = document.createElement("div");
+      toolbar.className = "table-toolbar";
+
+      var btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "table-expand-btn";
+      btn.textContent = "Expand table";
+      btn.setAttribute("aria-label", "Open table full screen");
+
+      toolbar.appendChild(btn);
+      table.parentNode.insertBefore(wrapper, table);
+      wrapper.appendChild(toolbar);
+      wrapper.appendChild(table);
+    });
+  }
+
+  function openModal(table) {
+    var overlay = document.createElement("div");
+    overlay.className = "table-expand-overlay open";
+
+    var modal = document.createElement("div");
+    modal.className = "table-expand-modal";
+
+    var close = document.createElement("button");
+    close.type = "button";
+    close.className = "table-expand-close";
+    close.textContent = "Close (Esc)";
+
+    var scroll = document.createElement("div");
+    scroll.className = "smart-scroll";
+
+    var content = document.createElement("div");
+    content.className = "main-content";
+
+    var clone = table.cloneNode(true);
+    content.appendChild(clone);
+    scroll.appendChild(content);
+    modal.appendChild(close);
+    modal.appendChild(scroll);
+    overlay.appendChild(modal);
+
+    function closeModal() {
+      if (overlay.parentNode) overlay.parentNode.removeChild(overlay);
+      document.body.style.overflow = "";
+      document.removeEventListener("keydown", onKey);
+      overlay.removeEventListener("click", onOverlayClick);
+    }
+    function onKey(e) {
+      if (e.key === "Escape") closeModal();
+    }
+    function onOverlayClick(e) {
+      if (e.target === overlay) closeModal();
+    }
+
+    close.addEventListener("click", closeModal);
+    overlay.addEventListener("click", onOverlayClick);
+    document.addEventListener("keydown", onKey);
+    document.body.style.overflow = "hidden";
+
+    document.body.appendChild(overlay);
+  }
+
+  document.addEventListener("click", function (e) {
+    var btn = e.target.closest(".table-expand-btn");
+    if (!btn) return;
+    var wrapper = btn.closest(".table-wrapper");
+    if (!wrapper) return;
+    var table = wrapper.querySelector("table");
+    if (table) openModal(table);
+  });
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", addExpandButtons);
+  } else {
+    addExpandButtons();
+  }
+})();
+</script>

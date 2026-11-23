@@ -19,6 +19,8 @@ search_enabled: true
 enable_copy_code_button: true
 last_edit_timestamp: false
 heading_anchors: true
+toc: true
+toc_level: 3
 
 # Just the Docs footer / copyright
 aux_links:

@@ -4,6 +4,8 @@ title: Clouds Comparison
 permalink: /
 nav_order: 1
 has_children: false
+toc: true
+toc_level: 3
 ---
 
 [![Version](https://img.shields.io/badge/version-v1.4.0-blue.svg)](https://github.com/govindarajanv/cloud-architect)
@@ -13,25 +15,6 @@ has_children: false
 A comprehensive, production-grade architectural reference mapping equivalent cloud services and capabilities across the "Big Three" hyperscalers: **Microsoft Azure**, **Amazon Web Services (AWS)**, and **Google Cloud Platform (GCP)** — plus a **Kubernetes (K8s Native)** column of cloud-native and CNCF projects (graduated first, then incubating, then other k8s-native OSS).
 
 Updated with the latest developments in the cloud space, including Generative AI & Foundation Models, Custom AI Silicon, Modern Serverless Containers, Unified Data Lakehouses, Cloud Security Posture Management (CSPM), and FinOps.
-
----
-
-## Table of Contents
-
-1. [Global Infrastructure & Fundamentals](#1-global-infrastructure--fundamentals)
-2. [Artificial Intelligence & Machine Learning](#2-artificial-intelligence--machine-learning)
-3. [Compute & Containers](#3-compute--containers)
-4. [Serverless & Event-Driven Architecture](#4-serverless--event-driven-architecture)
-5. [Storage](#5-storage)
-6. [Databases](#6-databases)
-7. [Networking & Content Delivery](#7-networking--content-delivery)
-8. [Security, Identity & Governance](#8-security-identity--governance)
-9. [Analytics, Big Data & Streaming](#9-analytics-big-data--streaming)
-10. [Application Ingress, Load Balancing & APIs](#10-application-ingress-load-balancing--apis)
-11. [Management, Observability & FinOps](#11-management-observability--finops)
-12. [Hybrid, Multi-Cloud & Edge](#12-hybrid-multi-cloud--edge)
-13. [Developer Tools & Infrastructure as Code](#13-developer-tools--infrastructure-as-code)
-14. [Key Cloud Rebrandings & Architectural Evolutions](#14-key-cloud-rebrandings--architectural-evolutions)
 
 ---
 

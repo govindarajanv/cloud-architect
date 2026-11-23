@@ -114,3 +114,105 @@
     position: static;
   }
 }
+
+/* ===== Table expand / fullscreen feature ===== */
+.table-toolbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0.5rem 0 0.25rem;
+  min-height: 1.75rem;
+}
+
+.table-expand-btn {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: #155799;
+  background: #eef3f8;
+  border: 1px solid #c9d7e8;
+  border-radius: 4px;
+  padding: 0.3rem 0.7rem;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.table-expand-btn:hover {
+  background: #155799;
+  color: #ffffff;
+}
+
+/* Fullscreen overlay */
+.table-expand-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  background: rgba(0, 0, 0, 0.75);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.table-expand-overlay.open {
+  display: flex;
+}
+
+.table-expand-modal {
+  position: relative;
+  background: #ffffff;
+  width: 98vw;
+  height: 98vh;
+  max-width: 1600px;
+  border-radius: 6px;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.table-expand-modal .table-expand-close {
+  position: absolute;
+  top: 0.45rem;
+  right: 0.6rem;
+  z-index: 10;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  background: #155799;
+  border: none;
+  border-radius: 4px;
+  padding: 0.35rem 0.8rem;
+  cursor: pointer;
+}
+
+.table-expand-modal .table-expand-close:hover {
+  background: #0f3f6e;
+}
+
+.table-expand-modal .smart-scroll {
+  flex: 1 1 auto;
+  overflow: auto;
+  padding: 3.2rem 1.5rem 1.5rem;
+  box-sizing: border-box;
+}
+
+.table-expand-modal .main-content {
+  max-width: none;
+  margin: 0;
+}
+
+.table-expand-modal .main-content table {
+  display: table;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  min-width: 760px;
+}
+
+.table-expand-modal .main-content table thead th {
+  position: sticky;
+  top: 0;
+}
