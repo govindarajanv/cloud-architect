@@ -1,9 +1,9 @@
 ---
-layout: single
+layout: default
 title: Clouds Comparison
 permalink: /
-classes: wide
-author_profile: false
+nav_order: 1
+has_children: false
 ---
 
 [![Version](https://img.shields.io/badge/version-v1.4.0-blue.svg)](https://github.com/govindarajanv/cloud-architect)

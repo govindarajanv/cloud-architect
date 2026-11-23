@@ -7,23 +7,29 @@ description: >-
   (GCP), and the Kubernetes (K8s Native) ecosystem.
 version: v1.4.0
 
-# GitHub Pages remote theme (Minimal Mistakes)
-remote_theme: mmistakes/minimal-mistakes@4.28.1
-minimal_mistakes_skin: "default"
+# GitHub Pages remote theme (Just the Docs)
+remote_theme: just-the-docs/just-the-docs@v0.12.0
 plugins:
   - jekyll-include-cache
   - jekyll-remote-theme
 
+# Just the Docs theme settings
+color_scheme: light
+search_enabled: true
+enable_copy_code_button: true
+last_edit_timestamp: false
+heading_anchors: true
+
+# Just the Docs footer / copyright
+aux_links:
+  "GitHub Repository":
+    - "https://github.com/govindarajanv/cloud-architect"
+footer_content: "Maintained by <a href=\"https://github.com/govindarajanv\">govindarajanv</a>"
+# end Just the Docs settings
+
 # GitHub Pages project page baseurl
 baseurl: "/cloud-architect"
 url: "https://govindarajanv.github.io"
-
-# Minimal Mistakes navigation / footer
-footer:
-  links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/govindarajanv/cloud-architect"
 
 # Build settings
 markdown: kramdown
