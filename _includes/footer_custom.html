@@ -3,10 +3,8 @@
   "use strict";
 
   function addExpandButtons() {
-    var tables = document.querySelectorAll(".main-content:not(.table-expand-modal .main-content) table");
+    var tables = document.querySelectorAll(".main-content table");
     tables.forEach(function (table) {
-      // Skip if a toolbar already exists (Just the Docs wraps tables in
-      // .table-wrapper, so use a marker rather than wrapper presence).
       if (table.previousElementSibling && table.previousElementSibling.classList.contains("table-toolbar")) return;
 
       var toolbar = document.createElement("div");
@@ -75,8 +73,6 @@
     var toolbar = btn.closest(".table-toolbar");
     if (!toolbar) return;
     var table = toolbar.nextElementSibling;
-    // Fallback: if the toolbar wasn't immediately before a <table>, find the
-    // next table within the shared wrapper.
     if (!table || table.tagName !== "TABLE") {
       var wrapper = toolbar.parentNode;
       table = wrapper && wrapper.querySelector("table");
