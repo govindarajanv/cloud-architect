@@ -4,7 +4,7 @@ description: >-
   A production-grade architectural reference mapping equivalent cloud services and
   capabilities across Microsoft Azure, Amazon Web Services (AWS), Google Cloud Platform
   (GCP), and the Kubernetes (K8s Native) ecosystem.
-version: v1.3.0
+version: v1.4.0
 
 # GitHub Pages remote theme
 remote_theme: pages-themes/cayman@v0.2.0
