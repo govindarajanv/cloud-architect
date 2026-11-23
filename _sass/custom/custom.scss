@@ -1,7 +1,6 @@
----
-# Just the Docs stylesheet (remote-theme override)
----
-@import "just-the-docs";
+/* Custom styles for Clouds Comparison (Just the Docs theme).
+   This file is loaded via the theme's _includes/css/custom.scss.liquid,
+   after the theme's base stylesheet, so overrides here take precedence. */
 
 /* ===== Version / live link badges ===== */
 .badges {
@@ -103,7 +102,7 @@
   color: #155799;
 }
 
-/* Pagination-like header underline for section headings */
+/* Section heading underline */
 .main-content h2 {
   border-bottom: 2px solid #e8eef2;
   padding-bottom: 0.3em;
